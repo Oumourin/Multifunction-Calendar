@@ -116,9 +116,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="boolYear.cpp" />
+    <ClCompile Include="getDate.cpp" />
+    <ClCompile Include="LanurToNew.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="statement.h" />
     <ClCompile Include="staticVar.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="Throttle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
