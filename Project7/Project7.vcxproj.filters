@@ -18,13 +18,10 @@
     <ClCompile Include="statement.h">
       <Filter>头文件</Filter>
     </ClCompile>
-    <ClCompile Include="staticVar.c">
+    <ClCompile Include="staticVar.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="字符串删除.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="NularToNew.c">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

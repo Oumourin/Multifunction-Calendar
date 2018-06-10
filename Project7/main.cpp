@@ -43,7 +43,7 @@ void choiceMenu()
 		break;
 	case 3:
 		system("cls");
-		getLunar();
+		choiceLunar();
 		break;
 	case 4:
 		system("cls");
@@ -236,6 +236,24 @@ int LunarCalendar(int year, int month, int day)
 		return 0;
 }
 
+void choiceLunar()
+{
+	int temp = 0;
+	printf("选择功能：\n1.公历转换农历\n2.农历转换公历\n");
+	scanf("%d",&temp);
+	switch (temp)
+	{
+	case 1:
+		getLunar();
+		break;
+	case 2:
+		lanurToNew();
+		break;
+	default:
+		break;
+	}
+}
+
 void getLunar()
 {
 	const char *ChDay[] = { "*","初一","初二","初三","初四","初五",
@@ -403,11 +421,11 @@ void sonMenu()
 		break;
 	case 2:
 		system("cls");
-		ftw();
+		getHoliday();
 		break;
 	case 3:
 		system("cls");
-		fth();
+		getInformation();
 		break;
 	}
 }
@@ -458,13 +476,13 @@ int getTotalDay(int year1, int month1, int day1, int year2, int month2, int day2
 	return total - day1;
 }
 
-void fth()
+void getInformation()
 {
-	printf("请输入日期：");
+	printf("请输入日期(输入格式2000-01-01)：");
 	int year, month, day;
 	int sum, i;
 	int months[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-	scanf("%d%d%d", &year, &month, &day);
+	scanf("%d-%d-%d", &year, &month, &day);
 	printf("%d-%d-%d", year, month, day);
 	if ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0))
 	{
@@ -482,13 +500,9 @@ void fth()
 	returnMenu();
 }
 
-void ftw()
-{
-	printf("");
-	returnMenu;
-}
 
-void CaculateWeekDay(int year, int month, int day)
+
+void CaculateWeekDay(int year, int month, int day) 
 {
 	if (month == 1 || month == 2)
 	{
@@ -508,4 +522,111 @@ void CaculateWeekDay(int year, int month, int day)
 
 	}
 }
+void lanurToNew()	//农历转换公历
+{
+	int year;
+	int month;
+	int day;
+	printf("输入需要转换的公历日期（输入格式：2000-01-01）(时间范围：1936-2028)：\n");
+	do
+	{
+		scanf("%d-%d-%d", &year, &month, &day);
+	} while (year<1936||year>2028||month<1||month>12||day<1||day>31);
 
+	int index = year - 1936;
+	int endIndex = month;
+	if ((DATAS[index][1] != 0) && (month > DATAS[index][1]))
+	{
+		endIndex++;
+	}
+	int dayNum = 0;
+	for (int i = 0; i < (endIndex - 1); i++)
+	{
+		dayNum += MONTH_DAYS[DATAS[index][4 + i]];
+	}
+	dayNum += day;
+	dayNum += DATAS[index][0];
+	int year_days = 365;
+	if (isYear(year))
+	{
+		year_days = 366;
+	}
+	if (dayNum > year_days)
+	{
+		year++;
+		dayNum -= year_days;
+	}
+	month = 1;
+
+	int dayOfMonth[12];
+
+	int i = 0;
+
+	if (isYear(year))
+	{
+		for (i = 0; i < 12; i++)
+		{
+			dayOfMonth[i] = DAYS_MONTH[1][i];
+		}
+	}
+	else
+	{
+		for (i = 0; i < 12; i++)
+		{
+			dayOfMonth[i] = DAYS_MONTH[0][i];
+		}
+	}
+
+	for (i = 0; i < 12; i++)
+	{
+		dayNum -= dayOfMonth[i];
+		if (dayNum <= 0)
+		{
+			break;
+		}
+		month++;
+	}
+	day = dayOfMonth[i] + dayNum;
+	printf("新历日期是：%d-%d-%d\n", year, month, day);
+	returnMenu();
+}
+
+void getHoliday()	//假期计算，没有做农历假期，只考虑了公历假期
+{
+	int year, month, day;
+	int temp=-1;
+	printf("输入需要计算的日期：（日期格式：2000-01-01）");
+	do
+	{
+		scanf("%d-%d-%d",&year,&month,&day);
+	} while (year<0||month<=0||month>12||day<=0||day>31);
+	switch (month)
+	{
+	case 1:
+	case 2:
+	case 3:
+	case 4:temp = getTotalDay(year, month, day, year, 5, 1);
+		break;
+	case 5:
+	case 6:
+	case 7:
+	case 8:
+	case 9:temp = getTotalDay(year, month, day, year, 10, 1);
+		break;
+	case 10:
+	case 11:
+	case 12:
+		temp = getTotalDay(year, month, day, year + 1, 1, 1);
+	default:
+		break;
+	}
+	if (temp==-1)
+	{
+		printf("日期输入错误");
+	}
+	else
+	{
+		printf("距离最近假期还有：%d\n",temp);
+	}
+	returnMenu();
+}
