@@ -65,7 +65,7 @@ int getTotalDay(int year1, int month1, int day1, int year2, int month2, int day2
 
 函数定义
 
-```C+=
+```C++
 void CaculateWeekDay(int year, int month, int day)；
 ```
 
