@@ -1,4 +1,4 @@
-#include"statement.h"
+#include"GetDate.h"
 void searchDate()
 {
 	int y, m;
@@ -6,7 +6,6 @@ void searchDate()
 	scanf("%d%d", &y, &m);
 	printDate(y, m);
 	returnMenu();
-
 }
 
 int getDate(int y, int m)

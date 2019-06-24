@@ -1,4 +1,4 @@
-#include"statement.h"
+#include"Statistics.h"
 int getBirthday()
 {
 	int year1, month1, day1;

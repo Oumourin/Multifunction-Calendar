@@ -1,4 +1,13 @@
-#include"statement.h"
+#include"LanurToNew.h"
+
+extern unsigned int LunarCalendarDay;
+extern unsigned int LunarCalendarTable[199];
+extern int MonthAdd[12];
+extern int DATAS[][17];
+extern int MONTH_DAYS[];
+extern int DAYS_MONTH[][12];
+
+
 int LunarCalendar(int year, int month, int day)
 {
 	int Spring_NY, Sun_NY, StaticDayCount;

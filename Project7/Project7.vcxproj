@@ -22,33 +22,33 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{B57A6AB0-31CF-48D5-93A0-07AEA60699D1}</ProjectGuid>
     <RootNamespace>Project7</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>多功能日历</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -116,15 +116,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="boolYear.cpp" />
-    <ClCompile Include="getDate.cpp" />
+    <ClCompile Include="BoolYear.cpp" />
+    <ClCompile Include="GetDate.cpp" />
     <ClCompile Include="LanurToNew.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ReturnMenu.cpp" />
     <ClCompile Include="statement.h" />
-    <ClCompile Include="staticVar.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="StaticVar.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="Throttle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoolYear.h" />
+    <ClInclude Include="GetDate.h" />
+    <ClInclude Include="LanurToNew.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="ReturnMenu.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="Throttle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,19 +18,10 @@
     <ClCompile Include="statement.h">
       <Filter>头文件</Filter>
     </ClCompile>
-    <ClCompile Include="staticVar.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="getDate.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="boolYear.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LanurToNew.cpp">
@@ -42,5 +33,40 @@
     <ClCompile Include="Statistics.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BoolYear.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetDate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticVar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReturnMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoolYear.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetDate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LanurToNew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Throttle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReturnMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
