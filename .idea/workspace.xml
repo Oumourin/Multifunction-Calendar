@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project7/staticVar.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="125" selection-start-line="125" selection-end-line="125" selection-end-column="17" />
+            <state relative-caret-position="530">
+              <caret line="126" selection-start-line="126" selection-end-line="126" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project7/boolYear.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="32">
+              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -114,6 +114,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Project7/staticVar.cpp" />
+        <option value="$PROJECT_DIR$/Project7/boolYear.cpp" />
       </list>
     </option>
   </component>
@@ -178,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561391302230</updated>
-      <workItem from="1561391304170" duration="1288000" />
+      <workItem from="1561391304170" duration="1554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1288000" />
+    <option name="totallyTimeSpent" value="1554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="44" width="1447" height="1036" extended-state="0" />
@@ -302,17 +304,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project7/boolYear.cpp">
+    <entry file="file://$PROJECT_DIR$/Project7/staticVar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="530">
+          <caret line="126" selection-start-line="126" selection-end-line="126" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project7/staticVar.cpp">
+    <entry file="file://$PROJECT_DIR$/Project7/boolYear.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="125" selection-start-line="125" selection-end-line="125" selection-end-column="17" />
+        <state relative-caret-position="32">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>

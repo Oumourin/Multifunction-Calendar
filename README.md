@@ -23,3 +23,52 @@ NUC-中北大学C语言大作业-多功能月历
 
 ##  相关函数
 
+###  闰年判断函数
+
+函数定义
+
+```c++
+int isYear(int year);
+```
+
+函数功能
+
+接受一个年份，判断是否为闰年，为真则返回1
+
+###  月份天数获取函数
+
+函数定义
+
+```c++
+int getDayOfMonth(int year, int month);
+```
+
+函数功能
+
+接受一个年份和一个月份，返回当月天数
+
+###  计算经过天数函数
+
+函数定义
+
+```c++
+int getTotalDay(int year1, int month1, int day1, int year2, int month2, int day2);
+```
+
+函数功能
+
+接受两个年份和月份，计算相距天数
+
+###  星期获取函数
+
+函数定义
+
+```C+=
+void CaculateWeekDay(int year, int month, int day)；
+```
+
+函数功能
+
+接受一个日期，输出其对应的星期
+
+ 
