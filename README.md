@@ -71,4 +71,62 @@ void CaculateWeekDay(int year, int month, int day)；
 
 接受一个日期，输出其对应的星期
 
- 
+###  打印月历函数
+
+函数定义
+
+```c++
+void searchDate()；
+```
+
+函数功能
+
+接受一个年份和月份输入，输出对应月历
+
+###  获取经过日期函数
+
+函数定义
+
+```c++
+int getDate(int y, int m)；
+```
+
+函数功能
+
+接受一个年份和月份，获取经过的天数
+
+###  打印月历函数
+
+函数定义 
+
+```c++
+void printDate(int y, int m);
+```
+
+函数功能
+
+格式化输出月历方法
+
+###  农历转换函数
+
+函数定义
+
+```c++
+int LunarCalendar(int year, int month, int day)；
+```
+
+函数功能
+
+接受一个年月日，实现农历转换
+
+###  公历农历功能选择函数
+
+函数定义
+
+```c++
+void choiceLunar();
+```
+
+函数功能
+
+公历农历菜单选择逻辑
