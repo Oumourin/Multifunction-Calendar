@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="statement.h">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -33,6 +30,9 @@
     <ClCompile Include="Statistics.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ReturnMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="BoolYear.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -40,9 +40,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="StaticVar.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ReturnMenu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -83,7 +83,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -121,7 +121,6 @@
     <ClCompile Include="LanurToNew.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ReturnMenu.cpp" />
-    <ClCompile Include="statement.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StaticVar.cpp" />
     <ClCompile Include="Statistics.cpp" />
